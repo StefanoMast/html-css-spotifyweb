@@ -14,103 +14,181 @@ html {
 }
 
 /*SIDEBAR*/
+    .sidebar {
+        width: 250px;
+        height: calc(100vh - 100px);
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 20px;
+    }
 
-.sidebar {
-    width: calc(100%/7);
-    height: calc(100vh - 100px);
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-left: 20px;
-}
+    .logo {
+        width: 60%;
+        margin: 20px 0;
+    }
 
-.logo {
-    width: 60%;
-    margin: 20px 0;
-}
+    .logo-small {
+        width: 0;
+    }
 
-.home-list ul li, .play-list ul li {
-    list-style: none;
-    color: lightgray;
-}
+    .home-li {
+        width: 10%;
+    }
 
-.col-two {
-    display: flex;
-}
+    .home-list ul li, .play-list ul li {
+        list-style: none;
+        color: lightgray;
+    }
 
-.content {
-    width: calc((100%/7)*6);
-}
+    .col-two {
+        display: flex;
+    }
 
-header {
-    height: 80px;
-    margin-top: 0;
-    margin-left: 0;
-    background-color: black;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
+    .doe {
+        width: 10%;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        background-color: grey;
+        padding: 1px;
+    }
 
-.upgrade {
-    background-color: transparent;
-    color: white;
-    border: 1px solid white;
-    padding: 10px 30px;
-    border-radius: 30px;
-    position: fixed;
-}
+    .content {
+        width: calc(100% - 250px);
+    }
+
+    header {
+        height: 80px;
+        margin-top: 0;
+        margin-left: 0;
+        background-color: black;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .upgrade {
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        padding: 10px 30px;
+        border-radius: 30px;
+        position: fixed;
+    }
 
 /*SEZIONE ARTISTI CON SCROLL*/
-.main-content {
-    height: calc(100vh - 180px);
-    overflow-y: scroll;
-    background-color: rgb(29, 29, 34);
+
+    .main-content {
+        height: calc(100vh - 180px);
+        overflow-y: scroll;
+        background-color: rgb(29, 29, 34);
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .nav-header li {
+        list-style: none;
+        display: inline-block;
+        padding: 0 10px;
+        color: lightgrey;
+    }
+
+    h2 {
+        display: block;
+        padding: 20px 10px;
+    }
+
+    .recently-played, .john, .artisti {
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .recently-played {
+        justify-content: space-around;
+    }
+
+    .album {
+        margin-left: 3px;
+    }
+
+    .john  img {
+        margin-left: 10px;
+    }
+
+    .john, .artisti {
+        justify-items: flex-start;
+    }
+    .album img {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .young img, .einaudi img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-left: 10px;
+    }
+
+
+ @media screen and (max-width: 700px) {
+    .john, .artisti {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
+@media screen and (max-width: 600px) {
+    main {
+        max-width: 100%;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 50px;
+        background-color: black;
+    }
+
+    .logo {
+        width: 0;
+    }
+
+    .logo-small {
+        width: 80%;
+        margin-top: -50px;
+        margin-left: 0;
+    }
+
+    .home-list, .play-list li {
+        font-size: 0;
+    }
+
+    .home-li {
+        width: 80%;
+        margin-left: 0;
+    }
+
+    .doe {
+        width: 100%;
+    }
+
+    p {
+        font-size: 0;
+    }
 }
-
-.nav-header li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 10px;
-    color: lightgrey;
-}
-
-h2 {
-    display: block;
-    padding: 20px 10px;
-}
-
-.recently-played, .john, .artisti {
-    display: flex;
-    text-align: center;
-}
-
-.recently-played {
-    justify-content: space-around;
-}
-
-.john, .artisti {
-    width: calc(100%/3);
-    justify-content: space-around;
-}
- .hm img, .stranger img, .quiet img, .split img, .cure img, .sinister img, .john img, .artisti img {
-     width: 200px;
-     height: 200px;
-     display: flex;
-     justify-content: space-around;
- }
-
- .young img, .einaudi img {
-     border-radius: 50%;
- }
-
+ 
 /*FOOTER*/
 footer {
     height: 100px;
@@ -120,7 +198,7 @@ footer {
 }
 
 .footer-col-left, .footer-col-right {
-    width: calc(100%/7);
+    width: 274px;
     background-color: rgb(43, 41, 41);
 }
 
@@ -143,6 +221,7 @@ footer {
 
 .footer-col-left {
     display: flex;
+    align-items: center;
 }
 
 .small-title {
