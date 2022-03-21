@@ -8,25 +8,56 @@ main {
     display: flex;
 }
 
+/*SIDEBAR*/
+
 .sidebar {
-    width: calc(100%/6);
+    width: calc(100%/7);
     height: calc(100vh - 100px);
     background-color: bisque;
+    display: flex;
+    flex-direction: column;
 }
 
+.logo {
+    width: 60%;
+}
+
+.home-list, .play-list ul {
+    list-style: none;
+}
+
+.col-two {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+
 .content {
-    width: calc((100%/6)*5);
+    width: calc((100%/7)*6);
 }
 
 header {
-    height: 100px;
+    height: 80px;
     margin-top: 0;
     margin-left: 0;
     background-color: brown;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
+.upgrade {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+
+/*SEZIONE ARTISTI CON SCROLL*/
 .main-content {
-    height: calc(100vh - 200px);
+    height: calc(100vh - 180px);
     overflow-y: scroll;
     background-color: chocolate;
 }
@@ -42,9 +73,21 @@ nav {
     text-align: center;
 }
 
+h1 {
+    display: block;
+}
+
 .recently-played, .john, .artisti {
     display: flex;
 }
+ .hm img, .stranger img, .quiet img, .split img, .cure img, .sinister img, .john img, .artisti img {
+     width: 200px;
+     height: 200px;
+ }
+
+ .young img, .einaudi img {
+     border-radius: 50%;
+ }
 footer {
     height: 100px;
     background-color: blanchedalmond;
