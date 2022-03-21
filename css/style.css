@@ -27,8 +27,24 @@ header {
 
 .main-content {
     height: calc(100vh - 200px);
+    overflow-y: scroll;
+    background-color: chocolate;
 }
 
+nav {
+    text-align: center;
+    padding: 10px;
+}
+
+.nav-header li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.recently-played, .john, .artisti {
+    display: flex;
+}
 footer {
     height: 100px;
     background-color: blanchedalmond;
