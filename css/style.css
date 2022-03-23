@@ -248,22 +248,28 @@ footer {
     background-color: rgb(43, 41, 41);
     display: flex;
     justify-content: space-between;
+    overflow: auto;
 }
 
 .footer-col-left, .footer-col-right {
-    width: 15%;
+    width: 250px;
     background-color: rgb(43, 41, 41);
     font-size: 14px;
 }
 
+.heart-folder {
+    display: inline-block;
+
+}
+
 .footer-col-central {
-    width: 60%;
+    width: 50%;
 }
 
 .footer-col-left img {
     width: 50px;
     height: 50px;
-    margin: 15px 0 15px 15px;
+    margin: 15px 0 15px 5px;
 }
 
 .footer-col-left {
@@ -302,7 +308,7 @@ footer {
 }
 
 .player {
-    width: 150px;
+    width: 50%;
     border-bottom: 3px solid grey;
     display: inline-block;
     margin-right: 10px;
