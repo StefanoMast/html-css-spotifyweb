@@ -33,7 +33,7 @@ html {
     }
 
     .logo-small {
-        width: 0;
+        display: none;
     }
 
     .home-list img{
@@ -98,7 +98,7 @@ html {
     }
 
     .col-three {
-        height: 75%;
+        height: 70%;
         overflow: auto;
     }
 
@@ -240,6 +240,24 @@ html {
         z-index: 4;
     }
 
+    .album-text {
+        width: 200px;
+    }
+
+    h4 {
+        margin: 20px 0 30px 10px;
+
+    }
+
+    .descr {
+        color: grey;
+    }
+
+    p {
+        margin: 5px 0;
+        color: grey;
+    }
+
 
 
  @media screen and (max-width: 700px) {
@@ -283,12 +301,6 @@ html {
         display: none;
     }
 
-    .home-li {
-        width: 80%;
-        margin-left: -10px;
-        margin-right: 10px;
-    }
-
     .col-three {
         height: 60%;
     }
@@ -309,11 +321,11 @@ html {
     }
 
     p {
-        font-size: 0;
+        display: none;
     }
 
     span {
-        font-size: 0;
+        display: none;
     }
 
     header {
