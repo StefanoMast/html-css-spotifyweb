@@ -221,17 +221,23 @@ html {
         display: none;
     }
 
-    img:hover {
+    .cover:hover > img {
         filter: opacity(0.5);
         display: flow-root;
     }
 
-    .overlay i {
+    .cover:hover > i {
+        font-size: 50px;
+        display: block;
+    }
+
+    .overlay {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
+        z-index: 4;
     }
 
 
