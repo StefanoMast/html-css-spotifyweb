@@ -36,19 +36,35 @@ html {
         width: 0;
     }
 
-    .home-li {
+    .home-list img{
         width: 10%;
+        display: inline-block;
+        margin: 3px 0;
+    }
+
+    .home-list li {
+        list-style: none;
+        padding-left: 10px;
+        vertical-align: middle;
+    }
+
+    a {
+        text-decoration: none;
+        color: grey;
+    }
+
+    a:hover {
+        color: white;
+    }
+
+    .home-list a:hover {
+        border-left: 3px solid green;
     }
 
     .play-list ul li {
         list-style: none;
         color: lightgray;
         font-size: 14px;
-    }
-
-    .home-li {
-        display: inline-block;
-        margin: 3px 0;
     }
 
     .col-one {
@@ -68,6 +84,14 @@ html {
         height: 50px;
         background-color: black;
         margin: 10px 0;
+    }
+
+    hr {
+        width: 90%;
+    }
+
+    .app-istall {
+        width: 10%;
     }
 
     .doe {
@@ -127,6 +151,10 @@ html {
         font-size: 14px;
     }
 
+    .nav-header li:hover {
+        border-bottom: 3px solid green;
+    }
+
     h2 {
         display: block;
         padding: 20px 10px;
@@ -156,6 +184,7 @@ html {
     .album img {
         width: 200px;
         height: 200px;
+        position: relative;
     }
 
     .young img, .einaudi img {
@@ -165,6 +194,13 @@ html {
         margin-left: 10px;
     }
 
+    .album i {
+        position: absolute;
+    }
+
+    img:hover {
+        filter: opacity(0.5);
+    }
 
  @media screen and (max-width: 700px) {
     .john, .artisti {
@@ -213,6 +249,10 @@ html {
         margin-right: 10px;
     }
 
+    .col-three {
+        height: 60%;
+    }
+
     .col-four {
         position: relative;
     }
@@ -221,7 +261,7 @@ html {
         display: none;
     }
 
-    .doe {
+    .doe, .app-istall {
         width: 100%;
        position: absolute;
        bottom: 0;
@@ -248,8 +288,9 @@ footer {
     background-color: rgb(43, 41, 41);
     display: flex;
     justify-content: space-between;
-    overflow: auto;
 }
+
+/*FOOTER COLONNA SINISTRA*/
 
 .footer-col-left, .footer-col-right {
     width: 250px;
@@ -257,28 +298,45 @@ footer {
     font-size: 14px;
 }
 
-.heart-folder {
-    display: inline-block;
-
-}
-
-.footer-col-central {
-    width: 50%;
-}
-
 .footer-col-left img {
     width: 50px;
     height: 50px;
-    margin: 15px 0 15px 5px;
+    margin-left: 15px;
 }
 
 .footer-col-left {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
 }
 
-.small-title {
-    margin: 15px 0 15px 5px;
+.heart-folder {
+    width: 50%;
+    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
+    text-align: rigth;
+}
+
+.sinister {
+    font-size: 14px;
+}
+
+.brano {
+    font-size: 12px;
+}
+
+.heart-folder i:last-child {
+    margin-left: 5px;
+}
+
+/*FOOTER COLONNA CENTRALE*/
+
+.footer-col-central {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
 }
 
 .play-top {
@@ -290,7 +348,7 @@ footer {
 
 .play {
     display: inline-block;
-    font-size: 25px;
+    width: 5%;
     margin: 0 10px;
 }
 
@@ -315,11 +373,13 @@ footer {
 }
 
 .player-one {
-    width: 50px;
+    width: 50%;
     border-bottom: 3px solid white;
     display: inline-block;
     margin-left: 10px;
 }
+
+/*FOOTER COLONNA DESTRA*/
 
 .footer-col-right {
     display: flex;
@@ -328,13 +388,7 @@ footer {
 }
 
 .footer-col-right i {
-    font-size: 20px;
-}
-
-
-
-@media screen and (max-width: 600px) {
-
+    width: 5%;
 }
 
 
