@@ -33,7 +33,7 @@ html {
     }
 
     .logo-small {
-        display: none;
+        width: 0;
     }
 
     .home-list img{
@@ -58,7 +58,7 @@ html {
         color: white;
     }
 
-    .home-list span {
+    .home-list p {
         display: inline-block;
     }
 
@@ -258,6 +258,24 @@ html {
         color: grey;
     }
 
+    .istalla-app p {
+        display: inline-block;
+    }
+
+    .download {
+        margin: 5px 5px 0 0;
+    }
+
+    .profile {
+        background-color: grey;
+        border-radius: 50%;
+        margin: 5px 5px 0 0;
+    }
+
+    .istalla-app img {
+        width: 10%;
+    }
+
 
 
  @media screen and (max-width: 700px) {
@@ -283,7 +301,7 @@ html {
     }
 
     .col-one {
-        height: 35px;
+        height: 80px;
     }
 
     .logo {
@@ -296,8 +314,17 @@ html {
         margin-left: -10px;
         margin-bottom: -10px;
     }
+    
+    .home-list img{
+        width: 100%;
+        margin-left: -17px;
+    }
 
-    .play-list ul li {
+    .home-list p {
+        display: none;
+    }
+
+    .play-list {
         display: none;
     }
 
@@ -305,28 +332,31 @@ html {
         height: 60%;
     }
 
-    .col-four {
-        position: relative;
-    }
-
     hr {
         display: none;
     }
 
-    .doe, .app-istall {
-        width: 100%;
-       position: absolute;
-       bottom: 0;
-       left: -10px;
+    .istalla-app {
+        margin-left: -10px;
+    }
+
+    .istalla-app img {
+        width: 50%;
+    }
+
+    .istalla-app p {
+        display: none;
+    }
+
+    .profile {
+        background-color: grey;
+        border-radius: 50%;
     }
 
     p {
         display: none;
     }
 
-    span {
-        display: none;
-    }
 
     header {
         width: 100%;
